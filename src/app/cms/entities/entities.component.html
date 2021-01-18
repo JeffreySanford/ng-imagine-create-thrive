@@ -1,0 +1,14 @@
+<div class="">
+  <div *ngFor="let entity of entities"
+    >
+    <div class="card slideInRight"
+      [@flyInOut]="'listAnimation'">
+      <img [src]="entity.avatar" class="card-img-top" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title" style="font-size: 1em; margin: 0 0 0 2em;">{{ entity.first_name }} {{ entity.last_name }}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+

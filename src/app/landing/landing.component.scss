@@ -1,0 +1,19 @@
+.nav-contatiner {
+  margin-top: 2em;
+  height: 10em;
+}
+
+video {
+  zoom: .5;
+  position: absolute;
+  margin-top: -10em;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  // transform: translate(50%, 50%);
+}
+@media(min-width: 800px) {
+  video {
+
+  }
+}

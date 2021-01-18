@@ -1,0 +1,19 @@
+<div [@flyInOut]="['in', 'onChange']" class="news card" >
+<div class="row" style="clear:both;">
+    <h5>Latest News</h5>
+    <div>
+      <ul>
+        <li style="list-style: none;">
+          <div>
+            <img [src]="view.avatar" alt="person avatar">
+            <a href="#" class="name">{{ view.first_name }} {{ view.last_name }}</a>
+            <p>{{ view.email }}</p>
+            <p>{{ view.phone }}</p>
+            <p>User ID: {{ view.id}}</p>
+            <p>{{ view.description }} </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

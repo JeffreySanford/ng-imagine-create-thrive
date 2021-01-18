@@ -1,0 +1,33 @@
+
+.navbar {
+  background-color:#ccc;
+  position: relative;
+  margin: 1em auto;
+  width: 90%;
+  height: 10em;
+  // Animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+nav img {
+  height: 3em;
+  width: 3em;
+}
+
+.social-button-row {
+  position: absolute;
+  text-align: right;
+  float: right;
+  right: 3em;
+  bottom: 0em;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  color: blueviolet
+}
+
+ul.social-buttons i {
+  padding-right: .5em;
+}

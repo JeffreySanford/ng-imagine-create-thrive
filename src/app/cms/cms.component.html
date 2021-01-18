@@ -1,0 +1,28 @@
+<div style="margin-top: 7em;">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+      <app-catagories
+        (click) = "onSelectCatagory($event)"
+        [catagories]="catagories">
+      </app-catagories>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+      <app-entities
+        (click)="onSelectPerson($event)"
+        [entities]="entities"
+        >
+      </app-entities>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+      <app-person-details
+        #person_view
+        [person]="person">
+      </app-person-details>
+    </div>
+
+    <div class="col-lg-3 col-md-12 col-sm-6 col-xs-6">
+      <app-news [featured]="featured"></app-news>
+    </div>
+  </div>
+</div>

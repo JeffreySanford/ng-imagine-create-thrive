@@ -1,0 +1,32 @@
+<div  *ngIf="person" class="" [@flyInOut]="'person'">
+  <div id="person_view" class="card" style="box-shadow: 0px 5px 15px 0px darkred;">
+    <img [src]="person.avatar" class="card-img-top" alt="Card image cap" style="width: 75px;float: left;"/>
+    <div class="card-block">
+      <h4 class="card-title">{{ person.first_name }} {{ person.last_name }}</h4>
+      <p class="card-text">{{ person.email }}</p>
+      <p class="card-text">{{ person.phone }}</p>
+      <p style="color:blueviolet; line-height: 1.25em;">{{ person.description }}</p>
+      <a routerLink="/landing" class="btn btn-primary">Go somewhere</a>
+      <div>
+        <div class="row" style="display:inline-block; cursor: pointer;margin: 1.5em auto;">
+          <div class="col-md-6">
+            <a (click)="customers.addEntity($event)">
+              <i class="fa fa-plus">add</i><br />
+            </a>
+            <a (click)="customers.updateEntity($event)">
+              <i class="fa fa-edit">edit</i><br />
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a (click)="customers.deleteEntity($event)">
+              <i class="fa fa-remove">delete</i><br />
+            </a>
+            <a (click)="customers.groupEntity($event)">
+              <i class="fa fa-group">group</i><br />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

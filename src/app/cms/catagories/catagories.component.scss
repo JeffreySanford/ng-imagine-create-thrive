@@ -1,0 +1,116 @@
+.btn-circle {
+  background-color:pink;
+  width: 5em;
+  height: 1em;
+
+  text-align: center;
+  padding: 0 0 2em 0;
+  font-size: 1em;
+  line-height: 1em;
+
+  position: relative;
+  width: 100px;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  margin-bottom: .5em;
+
+}
+
+.btn-circle:hover {
+  background-image: -webkit-linear-gradient(to top, #f4f1ee, pink);
+  background-image: linear-gradient(to top, white, white);
+  color: maroon;
+  box-shadow: 0px 5px 15px 0px lightpink, inset 0px 4px 15px 0px white, inset 0px -2px 25px 0px maroon;
+
+}
+
+.style-button {
+  background-color:pink;
+  box-shadow: 0px 5px 15px 0px darkred, inset 0px 4px 15px 0px pink, inset 0px -2px 15px 0px lightcoral;
+  float:left;
+  // margin: 0 30px 30px 0;
+}
+
+// .style-button p {
+//  margin-top: 1.2em;
+// }
+// .style-button:after{
+  // color:white;
+  // content: "";
+  // display: block;
+  // font-size: 30px;
+  // height: 30px;
+  // text-decoration: none;
+  // // text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+  // position: absolute;
+  // width: 30px;
+// }
+button:active {
+outline: none;
+border: 2px solid red;
+}
+
+button:focus {
+  outline:0;
+  border: 2px solid red;
+}
+
+
+@media(min-width:768px) {
+
+  .btn-circle {
+    background-color:pink;
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 2.8;
+    border-radius: 60px;
+
+    width: 100px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    margin-bottom: .5em;
+  }
+
+  .btn-circle:hover {
+    background-image: -webkit-linear-gradient(to top, #f4f1ee, pink);
+    background-image: linear-gradient(to top, white, white);
+    color: maroon;
+    box-shadow: 0px 5px 15px 0px lightpink, inset 0px 4px 15px 0px white, inset 0px -2px 25px 0px maroon;
+
+  }
+
+  .style-button {
+    background-color:pink;
+    box-shadow: 0px 5px 15px 0px darkred, inset 0px 4px 15px 0px pink, inset 0px -2px 15px 0px lightcoral;
+    float:left;
+    // margin: 0 30px 30px 0;
+  }
+
+  .style-button p {
+    margin-top: 1.2em;
+  }
+  // .style-button:after{
+    // color:white;
+    // content: "";
+    // display: block;
+    // font-size: 30px;
+    // height: 30px;
+    // text-decoration: none;
+    // // text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+    // position: absolute;
+    // width: 30px;
+  // }
+  button:active {
+  outline: none;
+  border: 2px solid red;
+  }
+
+  button:focus {
+    outline:0;
+    border: 2px solid red;
+  }
+
+}
